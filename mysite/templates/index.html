@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First webApp</title>
+</head>
+<body>
+<h1>This is home</h1>
+<h1>{{key1}}</h1>
+<a href="{% url 'result' %}">Click Me for Result</a>
+<form action="{% url 'result' %}">
+
+    <label>Age:</label>
+    <input type="text" name="user_age">
+</br>
+    <label>Name:</label>
+    <input type="text" name="name">
+    </br>
+    <textarea cols="60" rows="10" name="article"></textarea>
+           </br>
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>

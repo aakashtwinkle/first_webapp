@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<h1>This is result</h1>
+<a href="{% url 'home'%}">Click Me For Home</a>
+<h1>User Details:{{age_name}}</h1>
+{{article}}
+{{word_count}}
+
+{% for word,num in dicti %}
+<h1>{{word}}:{{num}}</h1>
+{% endfor %}
+</body>
+</html>
